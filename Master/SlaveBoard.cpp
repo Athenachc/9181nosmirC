@@ -37,3 +37,17 @@ void SlaveBoard::grasp()
     putc('A');    
 }
 
+void SlaveBoard::openC()
+{
+    putc('O');    
+}
+
+void SlaveBoard::pick()
+{
+    putc('U');    
+}
+
+void SlaveBoard::aim()
+{
+    putc('M');    
+}

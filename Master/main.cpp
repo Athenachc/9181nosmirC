@@ -270,9 +270,51 @@ void high_func_SQU()
         buttonBlock.start();
     }
 }
-void high_func_UP() {}
-void high_func_RIGHT() {}
-void high_func_DOWN() {}
+void high_func_UP() 
+{
+    // if the button blocked for 2000 ms or the button press for first time
+    if(buttonBlock.read_ms() >= blockTime || firstPress)
+    {
+        firstPress = false;
+        // Stop the timer
+        buttonBlock.stop();
+        // Send messege to slave
+        slave.openC();
+        // Restart the timer
+        buttonBlock.reset();
+        buttonBlock.start();
+    }    
+}
+void high_func_RIGHT() 
+{
+    // if the button blocked for 2000 ms or the button press for first time
+    if(buttonBlock.read_ms() >= blockTime || firstPress)
+    {
+        firstPress = false;
+        // Stop the timer
+        buttonBlock.stop();
+        // Send messege to slave
+        slave.grasp();
+        // Restart the timer
+        buttonBlock.reset();
+        buttonBlock.start();
+    }    
+}
+void high_func_DOWN() 
+{
+    // if the button blocked for 2000 ms or the button press for first time
+    if(buttonBlock.read_ms() >= blockTime || firstPress)
+    {
+        firstPress = false;
+        // Stop the timer
+        buttonBlock.stop();
+        // Send messege to slave
+        slave.aim();
+        // Restart the timer
+        buttonBlock.reset();
+        buttonBlock.start();
+    }    
+}
 void high_func_LEFT() 
 {
         // if the button blocked for 2000 ms or the button press for first time
@@ -282,7 +324,7 @@ void high_func_LEFT()
         // Stop the timer
         buttonBlock.stop();
         // Send messege to slave
-        slave.grasp();
+        slave.pick();
         // Restart the timer
         buttonBlock.reset();
         buttonBlock.start();

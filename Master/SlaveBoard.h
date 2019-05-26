@@ -12,4 +12,7 @@ class SlaveBoard : public Serial {
         void vesc();
         void charge();
         void grasp();
+        void openC();
+        void pick();
+        void aim();
 };
