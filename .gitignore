@@ -1,3 +1,7 @@
 # Don't track content of these folders
 .vscode/
 
+# Ingore on99 nikko's zip file and other on99 types
+*.zip
+*.bin
+*.html
