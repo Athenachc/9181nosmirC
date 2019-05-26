@@ -2,6 +2,7 @@
 
 ## PS4 button
 
+
 * L1 - manual去auto
 * R1 - auto去manual
 
