@@ -7,7 +7,7 @@
 
 * UP - semi auto step1 開夾
 * LEFT - semi auto step2 放上炮台
-* DOWN - semi auto step3 瞄準
+* DOWN - semi auto step3 落夾 prepare to fire
 
 
 * RIGHT - full auto 夾屎
