@@ -1,16 +1,15 @@
 # Slave
+Please READ main.cpp \ - / 
 
-## READ main.cpp \ - / 
-
-### Command List :
-#### Set Up
+## Command List :
+### Set Up
 ```
 hft.init(); //<- Wake up hfCore [essential]
 airt.init(); //<- Wake up relay [essential]
 hft.setupServo(PC_8); //<- gives a period to servo @ hfCore [essential], PC_8 can be any pin that gives a PWM
 ```
 
-#### Hf Core
+### Hf Core
 
 **O indicates front :**
 ```
@@ -20,7 +19,7 @@ hft.vsc(0); //<- Pull the trigger (Crossbow). Do not change the 0 since it is po
 hft.servoMove(); // Servo turn anticlockwise 180 degree (Fire the hole)
 ```
 
-#### Air Core
+### Air Core
 **make sure the circuit is correctly arranged.**
 
 * basic movements:
@@ -37,8 +36,8 @@ airt.hold(2); //<- close,moveup,open,close. <- for picking up shit and hold the 
 airt.aim(2); //<- open,movedown,close. <- for prepare to shoot. 2 is the time interval between movement
 ```
 
-**auto path -> fullSequence**
-**semi auto path -> open -> hold -> aim**
+* **auto path -> fullSequence**
+* **semi auto path -> open -> hold -> aim**
 
 ### For Serial Debug :
 ```
@@ -75,7 +74,7 @@ void inputInterrupter(char inp){
 
 ```
 
-
+## Readme.md written by max
 ```
 ░░░░░░░░░░░░░░░░░▄▄▄▄▄▄
 ░░░░░░░░░░░░░▄▄▀▀░░░░░░▀▄
