@@ -143,7 +143,7 @@ void airCore::fullSequence(float time) {
 void airCore::hold(float time) {
 	if (lock) {
 
-		printf("[airCore]ERROR:some else is running")
+		printf("[airCore]ERROR:some else is running");
 
 	}
 	else {
@@ -167,7 +167,7 @@ void airCore::aim(float time) {
 
 	if (lock) {
 
-		printf("[airCore]ERROR:some else is running")
+		printf("[airCore]ERROR:some else is running");
 
 	}
 	else {
