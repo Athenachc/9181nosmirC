@@ -1,5 +1,5 @@
 //hf core v.5
-//air core v.1
+//air core v.2
 
 ////////////////////////////////////////
 #include "mbed.h"
@@ -9,7 +9,9 @@
 ////////////////////////////////////////
 
 //pin need to change later.
-airCore airt(true, PC_9,PC_8,PB_8,PC_6);
+airCore airt(true, PC_9,PC_8,PB_8,PC_6); //<- for STM32F103RB (TEST ONLY)
+
+//airCore airt(true, ?,?,?,?); //<- for STM32F446RE
 
 ////////////////////////////////////////
 
