@@ -102,7 +102,7 @@ void inputInterrupter(char inp){
             airt.fss(2); //auto clipping
             break;
         case 'O':
-            airt.prepareS(0.01); //(clip the shit part1)
+            airt.prepareS(0.1); //(clip the shit part1)
             break;
         case 'U':
             airt.holdS(2); //pick the shit up (clip the shit part2)

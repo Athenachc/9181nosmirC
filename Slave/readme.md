@@ -36,7 +36,7 @@ airt.moveDown(); //<- Move Down (vertical movement)
 ```
 airt.fss(2);
 //^^ run the fullSequence of task. little bit buggy. 2 is the time interval between movement
-airt.prepareS(0.01);
+airt.prepareS(0.1);
 //^^ open. <- prepare to pick up. 0.01 is the time interval between movement
 airt.holdS(2);
 //^^ close,moveup,open,close. <- for picking up shit and hold the position. 2 is the time interval between movement
