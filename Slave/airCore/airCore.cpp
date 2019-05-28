@@ -100,7 +100,7 @@ void airCore::moveDown(void) {
 }
 
 void airCore::toggleMove(void) {
-	if (linearState) {
+	if (rotationalState) {
 		moveDown();
 	}
 	else {
@@ -256,6 +256,7 @@ void airCore::georgeMoveUp(void) {
 		georgeMoveState = true;
 
 		georgeLock = false;
+		printf("[airCore]George Up\n");
 	}
 
 }
@@ -275,6 +276,7 @@ void airCore::georgeMoveDown(void) {
 		georgeMoveState = false;
 
 		georgeLock = false;
+		printf("[airCore]George Down\n");
 	}
 
 }
@@ -305,6 +307,7 @@ void airCore::georgeHold(void) {
 		georgeHoldeState = true;
 
 		georgeLock = false;
+		printf("[airCore]George Hold State\n");
 	}
 
 }
@@ -324,6 +327,7 @@ void airCore::georgeRelease(void) {
 		georgeHoldeState = false;
 
 		georgeLock = false;
+		printf("[airCore]George Release State\n");
 	}
 
 }
