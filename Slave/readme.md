@@ -3,14 +3,14 @@ Please READ main.cpp ʘ‿ʘ
 
 ## Command List :
 ### Set Up
-```
-hft.init(); 
-//^^ Wake up hfCore [essential]
-airt.init(); 
-//^^ Wake up relay [essential]
-hft.setupServo(PC_8); 
-//^^ gives a period to servo @ hfCore [essential], PC_8 can be any pin that gives a PWM
-```
+
+| Command | Usage |
+| ------------- | ------------- |
+| `hft.init();` | Wake up hfCore [essential] |
+| `airt.init();` | Wake up relay [essential] |
+| `hft.setupServo(PC_8);` | gives a period to servo @ hfCore [essential], PC_8 can be any pin that gives a PWM |
+|
+
 
 ### Hf Core [HF + 拉弓 + Servo]
 
