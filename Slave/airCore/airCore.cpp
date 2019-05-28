@@ -115,8 +115,13 @@ void airCore::init(void) {
 		printf("[airCore]init: start\n");
 	}
 
+	//Shit Init
 	moveDown();
 	closeC();
+
+	//George Init
+	georgeMoveUp();
+	georgeRelease();
 
 	if (airCoreDebug) {
 		printf("[airCore]init: end\n");
@@ -175,7 +180,7 @@ void airCore::fss(float time) {
 }
 
 ////////////////////////////////////////////Path Semi-Auto
-void airCore::prepare(float time) {
+void airCore::prepareS(float time) {
 	if (lock) {
 
 		printf("[airCore]ERROR:some else is running\n");
@@ -191,7 +196,7 @@ void airCore::prepare(float time) {
 	}
 }
 
-void airCore::hold(float time) {
+void airCore::holdS(float time) {
 	if (lock) {
 
 		printf("[airCore]ERROR:some else is running\n");
@@ -214,7 +219,7 @@ void airCore::hold(float time) {
 	}
 }
 
-void airCore::aim(float time) {
+void airCore::aimS(float time) {
 
 	if (lock) {
 

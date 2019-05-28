@@ -20,9 +20,9 @@ public:
 	void init(void);
 
 	void fss(float time);
-	void prepare(float time);
-	void hold(float time);
-	void aim(float time);
+	void prepareS(float time);
+	void holdS(float time);
+	void aimS(float time);
 
 	void georgeMoveUp(void);
 	void georgeMoveDown(void);

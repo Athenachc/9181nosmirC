@@ -22,7 +22,7 @@ hft.vsc(0); //<- Pull the trigger (Crossbow). Do not change the 0 since it is po
 hft.servoMove(); //<- Servo turn anticlockwise 180 degree (Fire the hole)
 ```
 
-### Air Core
+### Air Core [Shit Mode]
 ʘ‿ʘ **make sure the circuit is correctly arranged.** ʘ‿ʘ
 
 * basic movements:
@@ -34,16 +34,37 @@ airt.moveDown(); //<- Move Down (vertical movement)
 ```
 * preset movements:
 ```
-airt.fullSequence(2);
+airt.fss(2);
 //^^ run the fullSequence of task. little bit buggy. 2 is the time interval between movement
-airt.hold(2);
+airt.prepareS(0.01);
+//^^ open. <- prepare to pick up. 0.01 is the time interval between movement
+airt.holdS(2);
 //^^ close,moveup,open,close. <- for picking up shit and hold the position. 2 is the time interval between movement
-airt.aim(2);
+airt.aimS(2);
 //^^ open,movedown,close. <- for prepare to shoot. 2 is the time interval between movement
 ```
 
 * **auto path -> fullSequence**
 * **semi auto path -> open -> hold -> aim**
+
+### Air Core [George Mode]
+ʘ‿ʘ **make sure the circuit is correctly arranged.** ʘ‿ʘ
+
+* basic movements:
+```
+airt.georgeRelease(); //<- Release (horizonal movement)
+airt.georgeHold(); //<- Hold (horizonal movement)
+airt.georgeMoveUp(); //<- Move Up (vertical movement)
+airt.georgeMoveDown(); //<- Move Down (vertical movement)
+```
+* preset movements:
+```
+airt.toggleGeorgeHold();
+//^^ toggle hold and release
+airt.toggleGeorgeMove();
+//^^ toggle up and down
+```
+
 
 ### For Serial Debug :
 ```
@@ -64,16 +85,25 @@ void inputInterrupter(char inp){
             hft.vsc(0); // Pull the trigger
             break;
         case 'A':
-            airt.fullSequence(2); //auto clipping
+            airt.fss(2); //auto clipping
             break;
         case 'O':
-            airt.openC(); //(clip the shit part1)
+            airt.prepareS(0.01); //(clip the shit part1)
             break;
         case 'U':
-            airt.hold(2); //pick the shit up (clip the shit part2)
+            airt.holdS(2); //pick the shit up (clip the shit part2)
             break;
         case 'M':
-            airt.aim(2); //prepare to shoot (clip the shit part3)
+            airt.aimS(2); //prepare to shoot (clip the shit part3)
+            break;
+        case 'P':
+            airt.georgeMoveUp(); //move up george
+            break;
+        case 'B':
+            airt.georgeMoveDown(); //move down george
+            break;
+        case 'L':
+            airt.toggleGeorgeHold(); // hold and release george.
             break;
     }
 }

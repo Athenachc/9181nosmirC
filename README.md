@@ -3,6 +3,7 @@
 ## Master
 
 ### Stable
+[Read Here](https://github.com/vinesmsuic/9181nosmirC/tree/master/Master)
 ```
 ░░░░░░░░░░░░░░░░░▄▄▄▄▄▄
 ░░░░░░░░░░░░░▄▄▀▀░░░░░░▀▄
@@ -27,6 +28,7 @@
 ## Slave
 
 ### Beta
+[Read Here](https://github.com/vinesmsuic/9181nosmirC/tree/master/Slave)
 
 * hfcore version 6.0 20/5/2019
 * aircore version 3.0 28/5/2019

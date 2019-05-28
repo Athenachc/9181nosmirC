@@ -102,13 +102,13 @@ void inputInterrupter(char inp){
             airt.fss(2); //auto clipping
             break;
         case 'O':
-            airt.openC(); //(clip the shit part1)
+            airt.prepareS(0.01); //(clip the shit part1)
             break;
         case 'U':
-            airt.hold(2); //pick the shit up (clip the shit part2)
+            airt.holdS(2); //pick the shit up (clip the shit part2)
             break;
         case 'M':
-            airt.aim(2); //prepare to shoot (clip the shit part3)
+            airt.aimS(2); //prepare to shoot (clip the shit part3)
             break;
         case 'P':
             airt.georgeMoveUp(); //move up george
