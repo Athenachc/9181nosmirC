@@ -1,6 +1,6 @@
 ﻿# 9181nosmirC
 
-## Master [Stable] [More Information...]((https://github.com/vinesmsuic/9181nosmirC/tree/master/Master))
+## Master [Stable] [More Information...](https://github.com/vinesmsuic/9181nosmirC/tree/master/Master)
 
 ### PS4 button
 
