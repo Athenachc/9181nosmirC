@@ -89,13 +89,13 @@ the UAart TX RX shoud be PA_0 and PA_1
 use multimeter to connection is CONNECTED( do you know how to use multimeter?
   ```
   ![do you f-ing remnber the pin layout?](https://os.mbed.com/media/uploads/adustm/nucleo_f446re_morpho_left_2016_7_22.png)
-1. check if the sender are really sending something out (and recivewer are reciveding)
+2. check if the sender are really sending something out (and recivewer are reciveding)
   ```
 you may refer to the slave USB conscole look for:
   ```
   `[uArt]Input:<uart sent char here>`
   
-1. Find on99 steve(it is dangerous)
+3. Find on99 steve(it is dangerous)
   ```
   well, this is a risky move
   ```
