@@ -1,4 +1,6 @@
-//version 2.0 23/5/2019
+//version 3.0 28/5/2019
+//state : not tested 
+//v3.0 george , toggle FEATURE AND prepare()
 //v2.0 lock 
 
 #include "airCore.h"
@@ -6,11 +8,14 @@
 
 
 //construstor
-airCore::airCore(bool debug, PinName pin1, PinName pin2, PinName pin3, PinName pin4) {
+airCore::airCore(bool debug, PinName pin1, PinName pin2, PinName pin3, PinName pin4, PinName pin5, PinName pin6) {
 	airCoreDebug = debug;
 	rotationalC = new Relay(pin1, pin2);
 	linearC = new Relay(pin3, pin4);
 	lock = true;
+
+	george = new Relay(pin5, pin6);
+	georgeLock = true;
 }
 
 
@@ -37,9 +42,12 @@ void airCore::openC(void) {
 	linearC->onCharge();
 	wait(0.1);
 
+	linearState = true;
+
 	if (airCoreDebug) {
 		printf("[airCore]OpenC\n");
 	}
+
 }
 
 void airCore::closeC(void) {
@@ -48,16 +56,30 @@ void airCore::closeC(void) {
 	linearC->onRelease();
 	wait(0.1);
 
+	linearState = false;
+
 	if (airCoreDebug) {
 		printf("[airCore]CloseC\n");
 	}
 }
+
+void airCore::toggleC(void) {
+	if (linearState) {
+		closeC();
+	}
+	else {
+		openC();
+	}
+}
+
 
 void airCore::moveUp(void) {
 	rotationalC->offRelease();
 	wait(0.1);
 	rotationalC->onCharge();
 	wait(0.1);
+
+	rotationalState = true;
 
 	if (airCoreDebug) {
 		printf("[airCore]Move up\n");
@@ -70,8 +92,19 @@ void airCore::moveDown(void) {
 	rotationalC->onRelease();
 	wait(0.1);
 
+	rotationalState = false;
+
 	if (airCoreDebug) {
 		printf("[airCore]Move down\n");
+	}
+}
+
+void airCore::toggleMove(void) {
+	if (linearState) {
+		moveDown();
+	}
+	else {
+		moveUp();
 	}
 }
 
@@ -95,7 +128,7 @@ void airCore::init(void) {
 void airCore::fullSequence(float time) {
 	if (lock) {
 
-		printf("[airCore]ERROR:some else is running")
+		printf("[airCore]ERROR:some else is running\n");
 
 	}
 	else {
@@ -140,10 +173,26 @@ void airCore::fullSequence(float time) {
 	}
 }
 
+void airCore::prepare(float time) {
+	if (lock) {
+
+		printf("[airCore]ERROR:some else is running\n");
+
+	}
+	else {
+		lock = true;
+
+		openC();
+		wait(time);
+
+		lock = false;
+	}
+}
+
 void airCore::hold(float time) {
 	if (lock) {
 
-		printf("[airCore]ERROR:some else is running")
+		printf("[airCore]ERROR:some else is running\n");
 
 	}
 	else {
@@ -167,7 +216,7 @@ void airCore::aim(float time) {
 
 	if (lock) {
 
-		printf("[airCore]ERROR:some else is running")
+		printf("[airCore]ERROR:some else is running\n");
 
 	}
 	else {
@@ -181,4 +230,103 @@ void airCore::aim(float time) {
 
 		lock = false;
 	}
+}
+
+//george========================================================================
+void airCore::georgeMoveUp(void) {
+	if (georgeLock) {
+
+		printf("[airCore]George said:some else is running\n");
+
+	}
+	else {
+		georgeLock = true;
+
+		george->onCharge();
+		wait(0.1);
+
+		georgeMoveState = true;
+
+		georgeLock = false;
+	}
+
+}
+
+void airCore::georgeMoveDown(void) {
+	if (georgeLock) {
+
+		printf("[airCore]George said:some else is running\n");
+
+	}
+	else {
+		georgeLock = true;
+
+		george->offCharge();
+		wait(0.1);
+
+		georgeMoveState = false;
+
+		georgeLock = false;
+	}
+
+}
+
+void airCore::toggleGeorgeMove(void) {
+
+	if (georgeHoldeState) {
+		georgeMoveDown();
+	}
+	else {
+		georgeMoveUp();
+	}
+
+}
+
+void airCore::georgeHold(void) {
+	if (georgeLock) {
+
+		printf("[airCore]George said:some else is running\n");
+
+	}
+	else {
+		georgeLock = true;
+
+		george->onRelease();
+		wait(0.1);
+
+		georgeHoldeState = true;
+
+		georgeLock = false;
+	}
+
+}
+
+void airCore::georgeRelease(void) {
+	if (georgeLock) {
+
+		printf("[airCore]George said:some else is running\n");
+
+	}
+	else {
+		georgeLock = true;
+
+		george->offRelease();
+		wait(0.1);
+
+		georgeHoldeState = false;
+
+		georgeLock = false;
+	}
+
+}
+
+void airCore::toggleGeorgeHold(void) {
+
+	if (georgeHoldeState) {
+		georgeRelease();
+	}
+	else {
+		georgeHold();
+	}
+
 }
