@@ -8,6 +8,8 @@
 
 ### PS4 button
 
+[!longliveGsam](https://github.com/vinesmsuic/9181nosmirC/blob/master/Images/PS4button.png "fuck you")
+
 | Button  | Usage |
 | ------------- | ------------- |
 | L1  | manual去auto  |
