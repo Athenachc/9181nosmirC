@@ -2,19 +2,19 @@
 
 ## PS4 button
 
+| Button  | Usage |
+| ------------- | ------------- |
+| L1  | manual去auto  |
+| R1  | auto去manual  |
+| UP  | toggle 升左治夾,落左治夾  |
+| RIGHT  | toggle 夾緊左治夾,放鬆左治夾  |
+| DOWN  | toggle 升屎夾,落屎夾  |
+| LEFT  | toggle 夾緊屎夾,放鬆屎夾  |
+| TRIANGLE  | Crossbow Trigger  |
+| CIRCLE  | Fire  |
+| SQUARE  | Homing  |
+| CROSS  | Charge  |
 
-* L1 - manual去auto
-* R1 - auto去manual
-
-* UP - toggle 升左治夾|落左治夾
-* RIGHT - toggle 夾緊左治夾|放鬆左治夾
-* DOWN -  toggle 升屎夾|落屎夾
-* LEFT - toggle 夾緊屎夾|放鬆屎夾
-
-* TRIANGLE - Crossbow Trigger
-* CIRCLE - Fire
-* SQUARE - Homing
-* CROSS - Charge
 
 ### chok技
 ```
