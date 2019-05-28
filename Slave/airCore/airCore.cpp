@@ -121,7 +121,7 @@ void airCore::init(void) {
 
 	//George Init
 	georgeMoveUp();
-	georgeRelease();
+	georgeHold();
 
 	if (airCoreDebug) {
 		printf("[airCore]init: end\n");

@@ -24,48 +24,6 @@ hfCore hft(true,0.3,0.95);  //Fastest speed. use CAREFULLY. the Speed is between
 
 ////////////////////////////////////////
 
-/* MAX 26/5/2019
-COMMAND LIST:
-
-//////////////Set Up////////////////////
-hft.init(); //<- Wake up hfCore [essential]
-airt.init(); //<- Wake up relay [essential]
-hft.setupServo(PC_8); //<- gives a period to servo @ hfCore [essential], PC_8 can be any pin that gives a PWM
-
-
-/////////////Hf Core////////////////////
-** O indicates front :
-
-hft.charge(true); //<- Stop at O------------| . Moving direction is backward.
-hft.homing(true); //<- Stop at O-------|----- .  Moving direction is forward.
-hft.vsc(0); //<- Pull the trigger (Crossbow). Do not change the 0 since it is position.
-hft.servoMove(); // Servo turn anticlockwise 180 degree (Fire the hole)
-
-
-//////////////Air Core//////////////////
-make sure the circuit is correctly arranged.
-
-*basic movements:
-
-airt.openC(); //<- Open (horizonal movement)
-airt.closeC(); //<- Close (horizonal movement)
-airt.moveUp(); //<- Move Up (vertical movement)
-airt.moveDown(); //<- Move Down (vertical movement)
-
-*preset movements:
-
-airt.fullSequence(2); //<- run the fullSequence of task. little bit buggy. 2 is the time interval between movement
-airt.hold(2); //<- close,moveup,open,close. <- for picking up shit and hold the position. 2 is the time interval between movement
-airt.aim(2); //<- open,movedown,close. <- for prepare to shoot. 2 is the time interval between movement
-
-auto path -> fullSequence
-semi auto path -> open -> hold -> aim  
-
-////////////////////////////////////////
-
-
-*/
-
 
 ////////////////////////////////////////
 /*
