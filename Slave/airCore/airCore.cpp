@@ -34,7 +34,7 @@ bool airCore::getAirCoreDebug(void) {
 	return airCoreDebug;
 }
 
-
+//shit==========================================================
 //basic movements
 void airCore::openC(void) {
 	linearC->offRelease();
@@ -125,7 +125,8 @@ void airCore::init(void) {
 	lock = false;
 }
 
-void airCore::fullSequence(float time) {
+////////////////////////////////////////////Path Auto
+void airCore::fss(float time) {
 	if (lock) {
 
 		printf("[airCore]ERROR:some else is running\n");
@@ -135,7 +136,7 @@ void airCore::fullSequence(float time) {
 		lock = true;
 
 		if (airCoreDebug) {
-			printf("[airCore]fullSequence: start\n");
+			printf("[airCore]fullSequenceShit: start\n");
 		}
 
 		////////////////////////
@@ -173,6 +174,7 @@ void airCore::fullSequence(float time) {
 	}
 }
 
+////////////////////////////////////////////Path Semi-Auto
 void airCore::prepare(float time) {
 	if (lock) {
 
@@ -233,6 +235,7 @@ void airCore::aim(float time) {
 }
 
 //george========================================================================
+//basic movement
 void airCore::georgeMoveUp(void) {
 	if (georgeLock) {
 
@@ -271,7 +274,7 @@ void airCore::georgeMoveDown(void) {
 
 }
 
-void airCore::toggleGeorgeMove(void) {
+void airCore::toggleGeorgeMove(void) { //toggle up and down
 
 	if (georgeHoldeState) {
 		georgeMoveDown();
@@ -320,7 +323,7 @@ void airCore::georgeRelease(void) {
 
 }
 
-void airCore::toggleGeorgeHold(void) {
+void airCore::toggleGeorgeHold(void) { //toggle hold and release
 
 	if (georgeHoldeState) {
 		georgeRelease();
@@ -330,3 +333,4 @@ void airCore::toggleGeorgeHold(void) {
 	}
 
 }
+

@@ -9,9 +9,9 @@
 ////////////////////////////////////////
 
 //pin need to change later.
-airCore airt(true, PC_9,PC_8,PB_8,PC_6); //<- for STM32F103RB (TEST ONLY)
+//airCore airt(true, PC_9,PC_8,PB_8,PC_6); //<- for STM32F103RB (TEST ONLY) 
 
-//airCore airt(true, ?,?,?,?); //<- for STM32F446RE
+airCore airt(true, PC_2,PC_3,PC_0,PA_4,PB_0,PC_5); //<- for STM32F446RE
 
 ////////////////////////////////////////
 
@@ -99,7 +99,7 @@ void inputInterrupter(char inp){
             hft.vsc(0); // Pull the trigger
             break;
         case 'A':
-            airt.fullSequence(2); //auto clipping
+            airt.fss(2); //auto clipping
             break;
         case 'O':
             airt.openC(); //(clip the shit part1)
@@ -109,6 +109,15 @@ void inputInterrupter(char inp){
             break;
         case 'M':
             airt.aim(2); //prepare to shoot (clip the shit part3)
+            break;
+        case 'P':
+            airt.georgeMoveUp(); //move up george
+            break;
+        case 'B':
+            airt.georgeMoveDown(); //move down george
+            break;
+        case 'L':
+            airt.toggleGeorgeHold(); // hold and release george.
             break;
     }
 }

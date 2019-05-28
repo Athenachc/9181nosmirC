@@ -6,12 +6,13 @@
 * L1 - manual去auto
 * R1 - auto去manual
 
-* UP - semi auto step1 開夾
-* LEFT - semi auto step2 放上炮台
-* DOWN - semi auto step3 落夾 prepare to fire
+
+* UP - 升左治夾 |step1 開屎夾
+* LEFT - toggle 夾緊/放鬆左治夾 |step2 放屎上炮台
+* DOWN - 落左治夾 |step3 落屎夾 prepare to fire
 
 
-* RIGHT - full auto 夾屎
+* RIGHT - toggle 交左治/夾屎 (default 左治mode)
 
 * TRIANGLE - Crossbow Trigger
 * CIRCLE - Fire

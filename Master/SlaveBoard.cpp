@@ -51,3 +51,18 @@ void SlaveBoard::aim()
 {
     putc('M');    
 }
+
+void SlaveBoard::upG()
+{
+    putc('P');    
+}
+
+void SlaveBoard::downG()
+{
+    putc('B');    
+}
+
+void SlaveBoard::toggleG()
+{
+    putc('L');    
+}

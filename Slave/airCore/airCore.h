@@ -19,7 +19,7 @@ public:
 
 	void init(void);
 
-	void fullSequence(float time);
+	void fss(float time);
 	void prepare(float time);
 	void hold(float time);
 	void aim(float time);

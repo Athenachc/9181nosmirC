@@ -72,6 +72,10 @@ int motor4 = 0;
 
 // Runtime Parameters
 bool autoMode = true;
+
+// George mode and Shit mode (Task Priority: George -> Shit)
+bool gMode = true;
+
 // Block PS4 button
 Timer buttonBlock;
 int blockTime = 2000; // Block for 2000 ms

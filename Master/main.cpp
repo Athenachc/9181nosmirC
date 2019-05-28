@@ -279,7 +279,8 @@ void high_func_UP()
         // Stop the timer
         buttonBlock.stop();
         // Send messege to slave
-        slave.openC();
+        if(gMode){slave.upG();}
+        if(!gMode){slave.openC();}
         // Restart the timer
         buttonBlock.reset();
         buttonBlock.start();
@@ -293,8 +294,9 @@ void high_func_RIGHT()
         firstPress = false;
         // Stop the timer
         buttonBlock.stop();
-        // Send messege to slave
-        slave.grasp();
+        // toggle George and Shit mode
+        if(gMode){gMode = false;}
+        if(!gMode){gMode = true;}
         // Restart the timer
         buttonBlock.reset();
         buttonBlock.start();
@@ -309,7 +311,8 @@ void high_func_DOWN()
         // Stop the timer
         buttonBlock.stop();
         // Send messege to slave
-        slave.aim();
+        if(gMode){slave.downG();}
+        if(!gMode){slave.aim();}
         // Restart the timer
         buttonBlock.reset();
         buttonBlock.start();
@@ -324,7 +327,8 @@ void high_func_LEFT()
         // Stop the timer
         buttonBlock.stop();
         // Send messege to slave
-        slave.pick();
+        if(gMode){slave.toggleG();}
+        if(!gMode){slave.pick();}
         // Restart the timer
         buttonBlock.reset();
         buttonBlock.start();
