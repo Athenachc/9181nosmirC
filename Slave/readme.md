@@ -69,7 +69,7 @@ Please READ main.cpp ʘ‿ʘ
 | `L` | 開關左治夾 |
 | `I` | 升降左治夾 |
 | `X` | 開關屎夾 |
-| `Y` | 開關屎夾 |
+| `Y` | 升降屎夾 |
 
 
 ## Readme.md written by max
