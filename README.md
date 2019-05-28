@@ -30,8 +30,8 @@
 | Situation  | Flow(in Arduino) |
 | ------------- | ------------- |
 | Shoot | CV (Shit) HF |
-| Shit | E  EDEEEDE |
-| George | W    K |
+| Shit | X  XYXXXYX |
+| George | I    L |
 
 ## Slave [Beta] [More Information...](https://github.com/vinesmsuic/9181nosmirC/tree/master/Slave)
 

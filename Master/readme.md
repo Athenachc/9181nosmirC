@@ -24,6 +24,12 @@
 | Shit | ↓  ↓←↓↓↓←↓ |
 | George | ↑    → |
 
+| Situation  | Flow(in Arduino) |
+| ------------- | ------------- |
+| Shoot | CV (Shit) HF |
+| Shit | X  XYXXXYX |
+| George | I    L |
+
 ```
 ░░░░░░░░░░░░░░░░░▄▄▄▄▄▄
 ░░░░░░░░░░░░░▄▄▀▀░░░░░░▀▄
