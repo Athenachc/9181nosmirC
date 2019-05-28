@@ -76,7 +76,7 @@ semi auto path -> open -> hold -> aim
 //TX, RX
 Serial usbDebug(USBTX, USBRX); // <- Serial Testing
 //Serial  Gsam(PC_10, PC_11); //not used
-Serial  Gsam(PA_0, PA_1);  // <- this is for the fully functional program
+Serial Gsam(PA_0, PA_1);  // <- this is for the fully functional program
 
 char temp; // get the input
 
