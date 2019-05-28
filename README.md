@@ -21,6 +21,12 @@
 | SQUARE □ | Homing  |
 | CROSS ×  | Charge  |
 
+| Situation  | Flow |
+| ------------- | ------------- |
+| Shoot | ×△ (Shit) □○ |
+| Shit | ↓  ↓←↓↓↓←↓ |
+| George | ↑    → |
+
 ## Slave
 
 ### Beta
