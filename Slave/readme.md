@@ -23,7 +23,7 @@ Please READ main.cpp ʘ‿ʘ
 | `hft.servoMove();` | Servo turn anticlockwise 180 degree (Fire the hole) |
 
 
-### Air Core [Shit Mode]
+### Air Core [Shit Mode 屎夾]
 ʘ‿ʘ **make sure the circuit is correctly arranged.** ʘ‿ʘ
 
 | Command | Usage |
@@ -44,7 +44,7 @@ Please READ main.cpp ʘ‿ʘ
 * **semi-auto : prepareS -> holdS -> aimS**
 * **manual : open->close->moveup->open->close->open->movedown->close**
 
-### Air Core [George Mode]
+### Air Core [George Mode 左治夾]
 ʘ‿ʘ **make sure the circuit is correctly arranged.** ʘ‿ʘ
 
 | Command | Usage |
@@ -58,7 +58,7 @@ Please READ main.cpp ʘ‿ʘ
 
 
 
-### For Serial Debug :
+### For Serial Debug Ardino (9600baud):
 
 | Command | Usage |
 | ------------- | ------------- |
