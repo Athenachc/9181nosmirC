@@ -12,6 +12,7 @@
 //airCore airt(true, PC_9,PC_8,PB_8,PC_6); //<- for STM32F103RB (TEST ONLY) 
 
 airCore airt(true, PC_2,PC_3,PC_0,PA_4,PB_0,PC_5); //<- for STM32F446RE
+//(toggleMove()[2pins], toggleC()[2pins], toggleGeorgeHold()[1pin], toggleGeorgeMove()[1pin])
 
 ////////////////////////////////////////
 
@@ -78,16 +79,16 @@ void inputInterrupter(char inp){
             break;
         //////////////////////////////////////////////////////////////////////
         case 'L':
-            airt.toggleGeorgeHold(); // toggle hold and release george. [G]
+            airt.toggleGeorgeHold(); // toggle hold and release george. [G] //PC_5
             break;
         case 'I':
-            airt.toggleGeorgeMove(); // toggle george moveup and down [S]
+            airt.toggleGeorgeMove(); // toggle george moveup and down [G] //PB_0
             break;
         case 'X':
-            airt.toggleC(); //toggle openC and closeC. [S]
+            airt.toggleC(); //toggle openC and closeC. [S] //PA_4 close , PC_0 open
             break;
         case 'Y':
-            airt.toggleMove(); //toggle move up and down. [S]
+            airt.toggleMove(); //toggle move up and down. [S] //PC_2 up, PC_3 down
             break;
         //////////////////////////////////////////////////////////////////////
     }

@@ -27,6 +27,12 @@
 | Shit | ↓  ↓←↓↓↓←↓ |
 | George | ↑    → |
 
+| Situation  | Flow(in Arduino) |
+| ------------- | ------------- |
+| Shoot | CV (Shit) HF |
+| Shit | E  EDEEEDE |
+| George | W    K |
+
 ## Slave [Beta] [More Information...](https://github.com/vinesmsuic/9181nosmirC/tree/master/Slave)
 
 * hfcore version 6.0 20/5/2019
