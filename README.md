@@ -1,10 +1,6 @@
 ﻿# 9181nosmirC
 
-## Master
-
-### Stable
-[Read Here](https://github.com/vinesmsuic/9181nosmirC/tree/master/Master)
-
+## Master [Stable] [More Information...]((https://github.com/vinesmsuic/9181nosmirC/tree/master/Master))
 
 ### PS4 button
 
@@ -23,16 +19,15 @@
 | SQUARE □ | Homing  |
 | CROSS ×  | Charge  |
 
+### How to ↑↑↓↓←→←→AB
+
 | Situation  | Flow |
 | ------------- | ------------- |
 | Shoot | ×△ (Shit) □○ |
 | Shit | ↓  ↓←↓↓↓←↓ |
 | George | ↑    → |
 
-## Slave
-
-### Beta
-[Read Here](https://github.com/vinesmsuic/9181nosmirC/tree/master/Slave)
+## Slave [Beta] [More Information...](https://github.com/vinesmsuic/9181nosmirC/tree/master/Slave)
 
 * hfcore version 6.0 20/5/2019
 * aircore version 3.0 28/5/2019
