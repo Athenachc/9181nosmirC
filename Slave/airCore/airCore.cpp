@@ -15,7 +15,7 @@ airCore::airCore(bool debug, PinName pin1, PinName pin2, PinName pin3, PinName p
 	lock = true;
 
 	george = new Relay(pin5, pin6);
-	georgeLock = true;
+	georgeLock = false;
 }
 
 

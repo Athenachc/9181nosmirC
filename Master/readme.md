@@ -18,18 +18,11 @@
 
 ### Flow
 
-```
-i = init
-_ = wait
-T = TRIANGLE
-[] = SQUARE
-O = CIRCLE
-X = CROSS
-```
-
-* Shoot - XT_(Shit)_[]O
-* Shit - i下_下左下下下左下
-* George - i上_右
+| Situation  | Flow |
+| ------------- | ------------- |
+| Shoot | ×△ (Shit) □○ |
+| Shit | ↓ ↓←↓↓↓←↓ |
+| George | ↑ → |
 
 ```
 ░░░░░░░░░░░░░░░░░▄▄▄▄▄▄
