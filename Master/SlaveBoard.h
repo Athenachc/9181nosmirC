@@ -17,5 +17,8 @@ class SlaveBoard : public Serial {
         void aim();
         void upG();
         void downG();
-        void toggleG();
+        void toggleHG();
+        void toggleVG();
+        void toggleVS();
+        void toggleHS();
 };

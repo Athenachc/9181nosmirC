@@ -62,7 +62,22 @@ void SlaveBoard::downG()
     putc('B');    
 }
 
-void SlaveBoard::toggleG()
+void SlaveBoard::toggleHG()
 {
     putc('L');    
+}
+
+void SlaveBoard::toggleVG()
+{
+    putc('I');    
+}
+
+void SlaveBoard::toggleHS()
+{
+    putc('X');    
+}
+
+void SlaveBoard::toggleVS()
+{
+    putc('Y');    
 }
