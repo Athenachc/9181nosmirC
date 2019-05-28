@@ -8,7 +8,7 @@
 
 ### PS4 button
 
-![longliveGsam](https://github.com/vinesmsuic/9181nosmirC/blob/master/Images/PS4button.png?raw=true "fuc u")
+![longliveGsam](https://user-images.githubusercontent.com/34955859/58477027-184f6280-8185-11e9-85eb-c7f96cf52cc8.png "fuc u")
 
 | Button  | Usage |
 | ------------- | ------------- |
