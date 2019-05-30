@@ -5,6 +5,10 @@
 *.zip
 *.bin
 *.html
+*.png
+*.jpg
+*.mp4
+*.mp3
 
 # Ignore Mac DS_Store files
 .DS_Store
